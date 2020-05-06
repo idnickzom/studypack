@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.studypack.computer" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:tools="http://schemas.android.com/tools">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>StudyPack</name>
+    <description>
+        Basic Computer Study Pack
+    </description>
+    <author email="18500173@emu.edu.tr" href="http://cordova.io">
+        Asogwa Valentine
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <gap:config-file parent="/manifest" platform="android">
+        <supports-screens android:largeScreens="true" android:smallScreens="true" android:xlargeScreens="true" />
+        <application android:theme="@android:style/Theme.NoTitleBar">
+            <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            </activity>
+        </application>
+    </gap:config-file>
+    <allow-intent href="market:*" />
+    <icon src="www/img/logo.png" />
+    <splash density="land-hdpi" src="www/img/screen/android/screen-hdpi-landscape.png" />
+    <splash density="port-hdpi" src="www/img/screen/android/screen-hdpi-portrait.png" />
+    <splash density="land-ldpi" src="www/img/screen/android/screen-ldpi-landscape.png" />
+    <splash density="port-ldpi" src="www/img/screen/android/screen-ldpi-portrait.png" />
+    <splash density="land-mdpi" src="www/img/screen/android/screen-mdpi-landscape.png" />
+    <splash density="port-mdpi" src="www/img/screen/android/screen-mdpi-portrait.png" />
+    <splash density="land-xhdpi" src="www/img/screen/android/screen-xhdpi-landscape.png" />
+    <splash density="land-xxhdpi" src="www/img/screen/android/screen-xxhdpi-landscape.png" />
+    <splash density="land-xxxhdpi" src="www/img/screen/android/screen-xxxhdpi-landscape.png" />
+    <splash density="port-xhdpi" src="www/img/screen/android/screen-xhdpi-portrait.png" />
+    <splash density="port-xxhdpi" src="www/img/screen/android/screen-xxhdpi-portrait.png" />
+    <splash density="port-xxxhdpi" src="www/img/screen/android/screen-xxxhdpi-portrait.png" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="phonegap-version" value="cli-9.0.0" />
+    <preference name="orientation" value="portrait" />
+    <preference name="ShowSplashScreenSpinner" value="true" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="10000" />
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-targetSdkVersion" value="29" />
+    <preference name="loadUrlTimeoutValue" value="400000" />
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    <preference name="AndroidExtraFilesystems" value="sdcard,cache" />
+</widget>

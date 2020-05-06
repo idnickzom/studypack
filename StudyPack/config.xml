@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.studypack.computer" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:android = "http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>StudyPack</name>
+    <description>
+        Basic Computer Study Pack
+    </description>
+    <author email="18500173@emu.edu.tr" href="http://cordova.io">
+        Asogwa Valentine
+    </author>
+    <content src="index.html" />
+
+
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="phonegap-version" value="cli-9.0.0" />
+    <preference name="orientation" value="portrait" />
+	<preference name="ShowSplashScreenSpinner" value="true" />
+	<preference name="SplashScreen" value="screen" />
+	<preference name="SplashScreenDelay" value="10000" />
+	<preference name="android-minSdkVersion" value="19" />
+	<preference name="android-targetSdkVersion" value="29" />
+	<preference name="loadUrlTimeoutValue" value="400000" />
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    <preference name="AndroidExtraFilesystems" value="sdcard,cache" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon src="www/img/logo.png"/>
+			
+		<!-- Splash Screen -->
+		<splash src="www/img/screen/android/screen-hdpi-landscape.png" density="land-hdpi"/>
+		<splash src="www/img/screen/android/screen-hdpi-portrait.png" density="port-hdpi"/>
+		<splash src="www/img/screen/android/screen-ldpi-landscape.png" density="land-ldpi"/>
+		<splash src="www/img/screen/android/screen-ldpi-portrait.png" density="port-ldpi"/>
+		<splash src="www/img/screen/android/screen-mdpi-landscape.png" density="land-mdpi"/>
+		<splash src="www/img/screen/android/screen-mdpi-portrait.png" density="port-mdpi"/>
+		<splash src="www/img/screen/android/screen-xhdpi-landscape.png" density="land-xhdpi"/>
+		<splash src="www/img/screen/android/screen-xxhdpi-landscape.png" density="land-xxhdpi"/>
+		<splash src="www/img/screen/android/screen-xxxhdpi-landscape.png" density="land-xxxhdpi"/>
+		<splash src="www/img/screen/android/screen-xhdpi-portrait.png" density="port-xhdpi"/>
+		<splash src="www/img/screen/android/screen-xxhdpi-portrait.png" density="port-xxhdpi"/>
+		<splash src="www/img/screen/android/screen-xxxhdpi-portrait.png" density="port-xxxhdpi"/>
+    </platform>
+	<gap:config-file platform="android" parent="/manifest">
+        <supports-screens 
+            android:xlargeScreens="true" 
+            android:largeScreens="true" 
+            android:smallScreens="true" />
+        <application android:theme="@android:style/Theme.NoTitleBar" >
+            <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            </activity>
+        </application>
+    </gap:config-file>
+
+
+</widget>
