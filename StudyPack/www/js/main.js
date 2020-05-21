@@ -45,3 +45,9 @@ function SubmitQuiz(){
 
     document.getElementById('showcase').innerHTML = response;
 }
+
+document.addEventListener('deviceready', AutoRotate, false);
+
+function AutoRotate(){
+    screen.orientation.unlock();
+}

@@ -34,7 +34,8 @@ div.headposition{
 }
 div.header{
 	width: 100%;
-	height: 70px;
+	padding-top: 10px;
+    padding-bottom: 10px;
 }
 table.course{
 	width: 100%;
@@ -192,6 +193,47 @@ input[type = 'radio']{
 div.hitbelow{
     margin-top: 30px;
 }
-@media screen and (max-width: 960px){
-
+@media screen and (min-width: 460px){
+    td.op1{
+        width: 15%;
+    }
+    td.op2{
+        width: 85%;
+    }
+    div.pushright{
+        width: 40%;
+    }
+}
+@media screen and (min-width: 660px){
+    td.op1{
+        width: 10%;
+    }
+    td.op2{
+        width: 90%;
+    }
+    div.pushright{
+        width: 36%;
+    }
+}
+@media screen and (min-width: 660px){
+    td.op1{
+        width: 7%;
+    }
+    td.op2{
+        width: 93%;
+    }
+    div.pushright{
+        width: 34%;
+    }
+}
+@media screen and (min-width: 960px){
+    td.op1{
+        width: 6%;
+    }
+    td.op2{
+        width: 94%;
+    }
+    div.pushright{
+        width: 30%;
+    }
 }
